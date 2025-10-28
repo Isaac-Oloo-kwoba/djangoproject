@@ -12,3 +12,12 @@ def transfer_funds(db,sender_id: int, receiver_id: int, amount: float):
     db.add(tx)
     db.commit()
     return tx
+
+
+try:
+    transaction = transfer_funds(session, 101, 202, 50.00)
+    print(f"Transaction successful! ID: {transaction.id}")
+except ValueError as e:
+    print(f"Transfer failed: {e}")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
