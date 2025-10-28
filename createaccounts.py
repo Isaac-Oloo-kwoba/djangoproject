@@ -160,7 +160,7 @@ def create_account():
                                                     else:
                                                         print("Invalid choice. Please try again.")
                                                         
-                                                        user Input = input("Enter your choice (1-5): ")
+                                                        
     
             
             
